@@ -471,7 +471,7 @@ client.on('interactionCreate', async (interaction) => {
         const dmEmbed = new EmbedBuilder()
           .setTitle('Your Remediation form was rejected')
           .addFields(
-            { name: ':exclamation: Reason', value: '```' + reason + '```' },
+            { name: ':exclamation: Reason', value: reason },
             { name: ':link: Remediation form', value: `[Go to remediation form](https://discord.com/channels/${GUILD_ID}/${REMEDIATION_CHANNEL_ID}/${remMsg.id})` }
           )
           .setColor('Red')
@@ -533,7 +533,7 @@ client.on('interactionCreate', async (interaction) => {
         const dmEmbed = new EmbedBuilder()
           .setTitle('Your Reprimand appeal was rejected')
           .addFields(
-            { name: ':exclamation: Reason', value: '```' + reason + '```' },
+            { name: ':exclamation: Reason', value: reason },
             { name: ':link: Appeal form', value: `[Go to appeal form](https://discord.com/channels/${GUILD_ID}/${APPEAL_CHANNEL_ID}/${appMsg.id})` }
           )
           .setColor('Red')
